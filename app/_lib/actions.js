@@ -23,7 +23,7 @@ export async function updateGuest(formData) {
 
   if (error) throw new Error("Guest could not be updated");
 
-  revalidatePath("/account");
+  revalidatePath("/account/profile");
 }
 
 export async function signInAction() {
