@@ -56,3 +56,7 @@ export async function deleteReservation(bookingId) {
 
   revalidatePath("/account/reservations");
 }
+
+export async function updateReservation(formData) {
+  console.log("Updated " + formData.get("observations"));
+}
